@@ -1,0 +1,81 @@
+html{
+    font-size: 18px;
+}
+body{
+    /* font-size: 18px; */
+    background-color:black;
+    color: white;
+    font-family: 'Noto Serif', serif;
+}
+.container1{
+    border:1px solid white;
+    border-radius: 5px;
+    width:70%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    /* background-color: #ebebff; */
+}
+
+.container1sub1{
+    flex-grow: 2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.myname{
+    text-align:center;
+    font-weight: bold;
+}
+.myimage img{
+    width:200px;
+    height:200px;
+   
+}
+.myimage{
+    margin: auto;
+}
+
+
+.details1 div{
+    padding:25px 0px 2px 0px;
+
+}
+
+.details2 div{
+    padding:25px 0px 2px 0px;
+
+}
+
+header{
+    font-weight: bold;
+    font-size: 23px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.container2{
+    /* border:1px solid black; */
+    width:70%;
+    margin:auto;
+}
+.order{
+    border:1px solid white;
+    margin:20px 0px;
+    border-radius: 20px;
+    /* background-color: #ebebff; */
+}
+.order div{
+    padding:10px;
+}
+
+@media only screen and (max-width:780px){
+    body{
+        font-size:.85rem;
+
+    }
+    .container1, .container2{
+        width:100%;
+    }
+}

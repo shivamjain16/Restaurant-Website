@@ -1,0 +1,72 @@
+body{
+    
+    /* opacity:0.5; */
+    /* color:white; */
+    font-size: 18px;
+    font-family: 'Noto Serif', serif;
+}
+
+.submit{
+    color:white;
+    background-color:rgb(67, 125, 233);
+    border: none;
+    border-radius: 4px;
+    font-size:16px;
+    padding: 5px 5px 5px 5px;
+    cursor:pointer;
+    display:block;
+    margin:auto;
+}
+
+.submit:hover{
+    background-color: blue;
+    border: 2px solid black;
+}
+
+
+
+
+
+
+.formblock{
+    /* background-color: bisque; */
+    border:4px solid black;
+    width: 30%;
+    border-radius: 20px;
+    padding: 35px 35px 35px 35px;
+    margin: 100px auto;
+}
+
+.formblock::before{
+    background: url('../img/food1.jpg') no-repeat center center;
+    z-index: -1;
+    top:0;
+    right:0;
+    content: "";
+    width:100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0.5;
+    bottom: 0;
+}
+
+input:not(.submit){
+    border:2px solid black;
+    border-radius: 4px;
+    /* display:block; */
+    /* width:150px; */
+    height:20px;
+    /* margin:auto; */
+}
+
+div{
+    padding:8px 3px 3px 3px;
+}
+
+
+
+@media only screen and (max-width:650px){
+    body{
+        font-size:.85em;
+    }
+}

@@ -1,0 +1,17 @@
+.container{
+    /* margin:100px 0px 0px 150px; */
+    /* border:2px solid black; */
+    background-color: purple;
+    width:70%;
+    margin:auto;
+    /* margin:100px 0px 0px 50px; */
+}
+
+.order{
+    background-color: #b7d69a;
+    border: 1px solid #b99a9a
+}
+.order p{
+    padding:3px;
+    margin:0px;
+}

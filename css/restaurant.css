@@ -1,0 +1,223 @@
+body{
+    
+    /* opacity:0.5; */
+    /* color:white; */
+    font-size: 18px;
+    font-family: 'Noto Serif', serif;
+}
+
+input[type='text']{
+    border:2px solid black;
+    border-radius: 4px;
+    /* display:block; */
+    width:200px;
+    height:20px;
+    /* margin:auto; */
+}
+
+.container{
+    margin: 10px;
+    display: flex;
+    /* grid-template-rows: 200px auto; */
+    flex-direction: column;
+}
+
+.container1{
+    /* border: 4px solid black; */
+     width:70%;
+     /* height:400px; */
+    margin: auto; 
+    display: flex;
+    flex-wrap: wrap;
+    /* height:200px; */
+    background-color: #fffed1;
+    /* justify-content: space-between; */
+}
+.restaurantimg{
+    /* width:250px; */
+    /* width:20%; */
+    height: 200px;
+    flex-grow: 1;
+    width:25%;
+    /* background-color: green; */
+}
+.restaurantimg img{
+    width:100%;
+    height:100%;
+}
+.container1elements2{
+    /* display:inline-block; */
+    display: flex;
+    flex-direction: column;
+    /* background-color: red; */
+    justify-content: space-evenly;
+    padding-left: 15px;
+    width:350px;
+     flex-grow: 6;  /*flex grow divides the remaining space into different parts. in this case it will get 6parts */
+    height: 200px;
+}
+
+.container2{
+    /* border:4px solid black; */
+    width:85%;
+    margin-top:20px;
+    margin-left: 15%;
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    /* border:4px solid black; */
+}
+
+/* .container2 span{
+    padding:72px;
+} */
+
+.container2 form{
+    background-color: #bdf7cf;
+    /* padding:10px; */
+    margin:10px 0px;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    /* height:70px; */
+    /* width:70%; */
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container2form{
+    /* width:70%; */
+    /* flex-basis:70%; */
+    flex-grow: 2;
+    margin-right:20px;
+}
+
+.container2 form span{
+    padding:5px;
+}
+
+.addtocart{
+    color: white;
+    background-color: rgb(46 220 14);
+    /* border: 2px solid white; */
+    border:none;
+    width: 100px;
+    height:40px;
+    margin:5px;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 5px 5px 5px 5px;
+    cursor:pointer;
+   
+    text-decoration: none;
+}
+
+.addtocart:hover{
+    background-color: #6ae25c;
+    border: 2px solid #bfa2a2;
+    
+}
+
+.quantity{
+    width:125px;
+}
+
+.gotocart{
+    color: white;
+    background-color: rgb(46 220 14);
+    border: 2px solid white;
+    /* border:none; */
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 5px 5px 5px 5px;
+    /* margin:auto; */
+    cursor:pointer;
+    /* width:100%; */
+    /* text-align: center; */
+    /* margin:15px 15px 15px 15px; */
+    /* position:absolute;
+    right:20px;
+    top:240px; */
+    /* display:block; */
+    /* margin:0px auto; */
+    text-decoration: none;
+}
+.gotocart:hover{
+    background-color: #6ae25c;
+    border: 2px solid #bfa2a2;
+    
+}
+
+.gotocartblock{
+    /* border:4px solid black; */
+    /* margin:0px auto; */
+    /* margin-right: 0px; */
+    /* flex-grow: 1;
+    flex-shrink: 5; */
+    /* flex-basis:15%; */
+    /* margin:0px auto; */
+    margin:0px auto;
+}
+
+.gotocartblock span{
+    /* display: block; */
+    /* border:4px solid black;
+    margin:auto; */
+}
+
+.container3{
+    /* border:4px solid black; */
+    width:70%;
+    margin:40px auto;
+    background-color: #a3ee9b;
+}
+
+.container3 header{
+    text-align: center;
+    font-weight: bold;
+    padding:10px;
+    font-size: 23px;
+}
+
+.container3 textarea{
+    width:100%;
+}
+
+.container3 form div{
+    padding:15px 4px;
+}
+
+.submit{
+    color:white;
+    background-color:rgb(67, 125, 233);
+    border: 2px solid #a3ee9b;
+    border-radius: 4px;
+    font-size:16px;
+    padding: 5px 5px 5px 5px;
+    cursor:pointer;
+    display:block;
+    margin:auto;
+    text-decoration: none;
+}
+
+.submit:hover{
+    background-color: blue;
+    border: 2px solid black;
+}
+
+.rating{
+    width:200px;
+    margin:auto;
+}
+
+.rating input{
+    width:60px;
+    padding-left:10px;
+}
+
+@media only screen and (max-width:750px){
+    .container1, .container2, .container3{
+        width:100%;
+        margin-left:0%;
+    }
+}

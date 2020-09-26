@@ -1,0 +1,17 @@
+
+html{
+    background-color: rgb(14, 13, 13);
+}
+h1{
+    color:rgb(223, 217, 217);
+}
+
+
+.review{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    color:rgb(223, 217, 217);
+    background-color: rgb(0, 0, 0);
+    border: 1px solid rgba(39, 38, 38, 0.945);
+    border-radius: 7px;
+}
