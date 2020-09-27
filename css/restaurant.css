@@ -23,6 +23,22 @@ padding: 5px 0px;
 
 }
 
+/* Carousel Images */
+
+.imageblock{
+    height:400px;
+    width:100%;
+}
+
+.restaurantcarousel img{
+    width:100%;
+    height:100%;
+}
+
+.imgcarousel{
+    opacity:0.8;
+}
+
 /* Dishes */
 
 .dishes{
@@ -52,8 +68,6 @@ padding: 5px 0px;
     font-weight: bold;
     padding-right:4px;
 }
-
-
 
 
 
