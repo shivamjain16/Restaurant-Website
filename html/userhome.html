@@ -6,182 +6,172 @@
     <meta name="description" content="when you google search some content is displayed below your link. that is this description. if you dont write description then it will show the content which matches with google search">
     <meta name="keywords" content="restaurant, food, order, eat">
     <title>Home</title>
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <!-- PopperJS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <!-- Javascript -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- My CSS -->
     <link rel="stylesheet" href="../css/userhome.css">
-    <link rel="stylesheet" href="../css/navbar.css">
 </head>
 <body>
   
-    <nav class="navbar">
-        <div> <a href="userhome.html">Home</a>          </div>
-        <div> <a href="userprofile.html">Profile</a>       </div>
-        
-        <div> <a href="" >Notifications</a> </div>
-        <div > <a href="login.html" class="logout">Log Out </a>      </div>
-        
-    </nav>
-    <div class="container">
-        <div class="imageandname">
-            <img src="../img/shivam.jpg" alt="" class="myimage">
-            <div>Shivam Jain</div>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <a class="navbar-brand" href="#"> Shivam Jain</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active px-3">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item px-3">
+                    <a class="nav-link" href="userprofile.html">Profile</a>
+                </li>
+                <li class="nav-item px-3">
+                    <a class="nav-link" href="#">Notifications</a>
+                </li>
+                <li class="nav-item px-3">
+                    <a class="nav-link" href="cart.html">Cart</a>
+                </li>
+                <li class="nav-item px-3">
+                    <a class="nav-link" href="login.html">LogOut</a>
+                </li>
+            </ul>
         </div>
-        <div class="restaurantblock">
-            <a href="restaurant.html">
-                <div class="restaurant">
-                    <img src="../img/restaurant.jpg" alt="" class="restaurantimg">
-                    <header>Restaurant name</header>
-                    <div>Address</div>
-                    <div>Rating</div>
+    </nav>
+
+    <!-- My image and restaurants -->
+    <div class="container-fluid mainblock">
+        <div class="row justify-content-center">
+            <div class="col-md-2 col-sm-4 col-8 ">
+                <div class="row">
+                    <img src="../img/shivam.jpg" alt="" class="myimage col-12">
+                    <div class="heading col-12">Shivam Jain</div>
                 </div>
-            </a>
-            <a href="restaurant.html">
-                <div class="restaurant">
-                    <img src="../img/restaurant.jpg" alt="" class="restaurantimg">
-                    <header>Restaurant name</header>
-                    <div>Address</div>
-                    <div>Rating</div>
+               
+            </div>
+            <div class="col-md-10 col-sm-8 col-8">
+                <div class="row justify-content-center">
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                        <a href="restaurant.html" class="text-decoration-none">
+                            <div class="restaurant">
+                                <img src="../img/restaurant.jpg" alt="" class="restaurantimg">
+                                <div>Restaurant name</div>
+                                <div>Address</div>
+                                <div>Rating</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                        <a href="restaurant.html" class="text-decoration-none">
+                            <div class="restaurant">
+                                <img src="../img/restaurant.jpg" alt="" class="restaurantimg">
+                                <div>Restaurant name</div>
+                                <div>Address</div>
+                                <div>Rating</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                        <a href="restaurant.html" class="text-decoration-none">
+                            <div class="restaurant">
+                                <img src="../img/restaurant.jpg" alt="" class="restaurantimg">
+                                <div>Restaurant name</div>
+                                <div>Address</div>
+                                <div>Rating</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                        <a href="restaurant.html" class="text-decoration-none">
+                            <div class="restaurant">
+                                <img src="../img/restaurant.jpg" alt="" class="restaurantimg">
+                                <div>Restaurant name</div>
+                                <div>Address</div>
+                                <div>Rating</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                        <a href="restaurant.html" class="text-decoration-none">
+                            <div class="restaurant">
+                                <img src="../img/restaurant.jpg" alt="" class="restaurantimg">
+                                <div>Restaurant name</div>
+                                <div>Address</div>
+                                <div>Rating</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                        <a href="restaurant.html" class="text-decoration-none">
+                            <div class="restaurant">
+                                <img src="../img/restaurant.jpg" alt="" class="restaurantimg">
+                                <div>Restaurant name</div>
+                                <div>Address</div>
+                                <div>Rating</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                        <a href="restaurant.html" class="text-decoration-none">
+                            <div class="restaurant">
+                                <img src="../img/restaurant.jpg" alt="" class="restaurantimg">
+                                <div>Restaurant name</div>
+                                <div>Address</div>
+                                <div>Rating</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                        <a href="restaurant.html" class="text-decoration-none">
+                            <div class="restaurant">
+                                <img src="../img/restaurant.jpg" alt="" class="restaurantimg">
+                                <div>Restaurant name</div>
+                                <div>Address</div>
+                                <div>Rating</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                        <a href="restaurant.html" class="text-decoration-none">
+                            <div class="restaurant">
+                                <img src="../img/restaurant.jpg" alt="" class="restaurantimg">
+                                <div>Restaurant name</div>
+                                <div>Address</div>
+                                <div>Rating</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                        <a href="restaurant.html" class="text-decoration-none">
+                            <div class="restaurant">
+                                <img src="../img/restaurant.jpg" alt="" class="restaurantimg">
+                                <div>Restaurant name</div>
+                                <div>Address</div>
+                                <div>Rating</div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    
                 </div>
-            </a>
-            <a href="restaurant.html">
-                <div class="restaurant">
-                    <img src="../img/restaurant.jpg" alt="" class="restaurantimg">
-                    <header>Restaurant name</header>
-                    <div>Address</div>
-                    <div>Rating</div>
-                </div>
-            </a>
-            <a href="restaurant.html">
-                <div class="restaurant">
-                    <img src="../img/restaurant.jpg" alt="" class="restaurantimg">
-                    <header>Restaurant name</header>
-                    <div>Address</div>
-                    <div>Rating</div>
-                </div>
-            </a>
-            <a href="restaurant.html">
-                <div class="restaurant">
-                    <img src="../img/restaurant.jpg" alt="" class="restaurantimg">
-                    <header>Restaurant name</header>
-                    <div>Address</div>
-                    <div>Rating</div>
-                </div>
-            </a>
-            <a href="restaurant.html">
-                <div class="restaurant">
-                    <img src="../img/restaurant.jpg" alt="" class="restaurantimg">
-                    <header>Restaurant name</header>
-                    <div>Address</div>
-                    <div>Rating</div>
-                </div>
-            </a>
-            <a href="restaurant.html">
-                <div class="restaurant">
-                    <img src="../img/restaurant.jpg" alt="" class="restaurantimg">
-                    <header>Restaurant name</header>
-                    <div>Address</div>
-                    <div>Rating</div>
-                </div>
-            </a>
-            <a href="restaurant.html">
-                <div class="restaurant">
-                    <img src="../img/restaurant.jpg" alt="" class="restaurantimg">
-                    <header>Restaurant name</header>
-                    <div>Address</div>
-                    <div>Rating</div>
-                </div>
-            </a>
-            <a href="restaurant.html">
-                <div class="restaurant">
-                    <img src="../img/restaurant.jpg" alt="" class="restaurantimg">
-                    <header>Restaurant name</header>
-                    <div>Address</div>
-                    <div>Rating</div>
-                </div>
-            </a>
-            <a href="restaurant.html">
-                <div class="restaurant">
-                    <img src="../img/restaurant.jpg" alt="" class="restaurantimg">
-                    <header>Restaurant name</header>
-                    <div>Address</div>
-                    <div>Rating</div>
-                </div>
-            </a>
-            <a href="restaurant.html">
-                <div class="restaurant">
-                    <img src="../img/restaurant.jpg" alt="" class="restaurantimg">
-                    <header>Restaurant name</header>
-                    <div>Address</div>
-                    <div>Rating</div>
-                </div>
-            </a>
-            <a href="restaurant.html">
-                <div class="restaurant">
-                    <img src="../img/restaurant.jpg" alt="" class="restaurantimg">
-                    <header>Restaurant name</header>
-                    <div>Address</div>
-                    <div>Rating</div>
-                </div>
-            </a>
-            <a href="restaurant.html">
-                <div class="restaurant">
-                    <img src="../img/restaurant.jpg" alt="" class="restaurantimg">
-                    <header>Restaurant name</header>
-                    <div>Address</div>
-                    <div>Rating</div>
-                </div>
-            </a>
-            <a href="restaurant.html">
-                <div class="restaurant">
-                    <img src="../img/restaurant.jpg" alt="" class="restaurantimg">
-                    <header>Restaurant name</header>
-                    <div>Address</div>
-                    <div>Rating</div>
-                </div>
-            </a>
-            <a href="restaurant.html">
-                <div class="restaurant">
-                    <img src="../img/restaurant.jpg" alt="" class="restaurantimg">
-                    <header>Restaurant name</header>
-                    <div>Address</div>
-                    <div>Rating</div>
-                </div>
-            </a>
-            <a href="restaurant.html">
-                <div class="restaurant">
-                    <img src="../img/restaurant.jpg" alt="" class="restaurantimg">
-                    <header>Restaurant name</header>
-                    <div>Address</div>
-                    <div>Rating</div>
-                </div>
-            </a>
-            <a href="restaurant.html">
-                <div class="restaurant">
-                    <img src="../img/restaurant.jpg" alt="" class="restaurantimg">
-                    <header>Restaurant name</header>
-                    <div>Address</div>
-                    <div>Rating</div>
-                </div>
-            </a>
-            <a href="restaurant.html">
-                <div class="restaurant">
-                    <img src="../img/restaurant.jpg" alt="" class="restaurantimg">
-                    <header>Restaurant name</header>
-                    <div>Address</div>
-                    <div>Rating</div>
-                </div>
-            </a>
-            
-        
-        
+            </div>
         </div>
     </div>
-    
-   
-    
-    <!-- <ul>
-        <li>restaurant1</li>
-        <li>restaurant2</li>
-        <li>restaurant3</li>
-        <li>restaurant4</li>
-    </ul> -->
 </body>
 </html>
