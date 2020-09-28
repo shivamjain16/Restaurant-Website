@@ -1,5 +1,5 @@
 body{
-    background-color: #343a40;
+    background-color: #9BFA86;
 }
 
 @media only screen and (max-width:650px){
@@ -17,13 +17,14 @@ body{
 .heading{
     font-weight:bold;
     text-align:center;
+    font-size: 1.4rem;
 }
 
 /* Container Restaurants */
 .restaurant{
-    border:2px solid white;
+    border:2px solid black;
     margin-top:10px;
-    color:rgba(255,255,255,0.5);
+    color:black;
     border-radius: 5px;
     height:210px;
 }
