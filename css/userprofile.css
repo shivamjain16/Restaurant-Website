@@ -1,81 +1,58 @@
-html{
-    font-size: 18px;
-}
+
 body{
-    /* font-size: 18px; */
-    background-color:black;
-    color: white;
-    font-family: 'Noto Serif', serif;
-}
-.container1{
-    border:1px solid white;
-    border-radius: 5px;
-    width:70%;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    /* background-color: #ebebff; */
+    background-color: #9BFA86;
 }
 
-.container1sub1{
-    flex-grow: 2;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-.myname{
+.heading{
+    font-weight:bold;
     text-align:center;
-    font-weight: bold;
-}
-.myimage img{
-    width:200px;
-    height:200px;
-   
-}
-.myimage{
-    margin: auto;
+    font-size: 1.4rem;
 }
 
+/* Image and User details */
 
-.details1 div{
-    padding:25px 0px 2px 0px;
-
+.myimg{
+    border:3px solid black;
 }
 
-.details2 div{
-    padding:25px 0px 2px 0px;
-
+.myimg >img{
+    height:30vh;
+    width:100%;
 }
 
-header{
-    font-weight: bold;
-    font-size: 23px;
-    text-align: center;
-    margin-top: 30px;
+.imageuserdetails{
+    border:1px solid black;
 }
 
-.container2{
-    /* border:1px solid black; */
-    width:70%;
-    margin:auto;
+.userdetails > div{
+    padding:.7rem;
 }
+
+
+/* Orders */
+
 .order{
-    border:1px solid white;
-    margin:20px 0px;
-    border-radius: 20px;
-    /* background-color: #ebebff; */
+    border:1px solid black;
 }
-.order div{
+
+.orderitems{
+    text-align:center;
+    
+}
+
+.orderitemsbox{
+    border-radius: 10px;
+    border:0.5px solid black;
+    margin-bottom:.5rem;
+}
+.orderitemsbox > div{
+    padding:2px 12px;
+}
+
+.totalcost{
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.orderdetail > div{
     padding:10px;
-}
-
-@media only screen and (max-width:780px){
-    body{
-        font-size:.85rem;
-
-    }
-    .container1, .container2{
-        width:100%;
-    }
 }

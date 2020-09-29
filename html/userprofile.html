@@ -6,55 +6,160 @@
     <meta name="description" content="when you google search some content is displayed below your link. that is this description. if you dont write description then it will show the content which matches with google search">
     <meta name="keywords" content="restaurant, food, order, eat">
     <title>User Name</title>
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <!-- PopperJS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <!-- Javascript -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- My CSS file -->
     <link rel="stylesheet" href="../css/userprofile.css">
-    <link rel="stylesheet" href="../css/navbar.css">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar">
-        <div> <a href="userhome.html">Home</a>          </div>
-        <div> <a href="userprofile.html">Profile</a>       </div>
-        <div> <a href="" >Notifications</a> </div>
-        <div > <a href="login.html" class="logout">Log Out </a>      </div>
-        
-    </nav>
-    <div class="container1">
-        <div class="myimage">
-            <img src="../img/shivam.jpg" alt="">
-            <div class="myname">Shivam Jain</div>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-success">
+        <a class="navbar-brand" href="#"> Shivam Jain</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active px-3">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item px-3">
+                    <a class="nav-link" href="userprofile.html">Profile</a>
+                </li>
+                <li class="nav-item px-3">
+                    <a class="nav-link" href="#">Notifications</a>
+                </li>
+                <li class="nav-item px-3">
+                    <a class="nav-link" href="cart.html">Cart</a>
+                </li>
+                <li class="nav-item px-3">
+                    <a class="nav-link" href="login.html">LogOut</a>
+                </li>
+            </ul>
         </div>
-        <div class="container1sub1">
-            <div class="details1">
+    </nav>
+
+    <!-- Image and user details -->
+    <div class="container  ">
+        <div class="row justify-content-center no-gutters imageuserdetails">
+            <div class="col-md-2 myimg col-sm-4 col-7">
+                <img src="../img/shivam.jpg" alt="">
+            </div>
+            <div class="col-md-5 userdetails col-sm-4 col-6">
                 <div>Name lorem</div>
                 <div>Email Lorem, ipsum.</div>
                 <div>Gender lorem</div>
                 <div>Contact lorem</div>
             </div>
-            <div class="details2">
+            <div class="col-md-5 userdetails col-sm-4 col-6">
                 <div>Birthday lorem</div>
                 <div>Address Lorem, ipsum.</div>
                 <div>City lorem</div>
                 <div>State lorem</div>
             </div>
         </div>
-       
     </div>
 
-    <header>Orders</header>
-    <div class="container2">
-        <div class="order">
-            <div>OrderID</div>
-            <div>Order Items</div>
-            <div>Total Cost</div>
-            <div>Restaurant</div>
-            <div>order date</div>
+    <!-- Orders -->
+    <div class="container">
+        <div class="heading">Orders</div>
+        <div class="row justify-content-around order no-gutters">
+            <div class="col-auto orderdetail">
+                <div>OrderId: Lorem, ipsum.</div>
+                <div>Restaurant: Lorem, ipsum.</div>
+                <div>Date: lorem</div>
+            </div>
+            <div class="col-auto">
+                <div class="orderitems">Order Items</div>
+                <div class="orderitemsbox">
+                    <div>item1*2 cost</div>
+                    <div>item1*2 cost</div>
+                    <div>item1*2 cost</div>
+                    <div>item1*2 cost</div>
+                    <div>item1*2 cost</div>
+                    <div>item1*2 cost</div> 
+                    <div class="totalcost">Total Cost cost</div>
+                </div>
+               
+            </div>
         </div>
-        <div class="order">
-            <div>OrderID</div>
-            <div>Order Items</div>
-            <div>Total Cost</div>
-            <div>Restaurant</div>
-            <div>order date</div>
+
+        <div class="row justify-content-around order no-gutters">
+            <div class="col-auto orderdetail">
+                <div>OrderId: Lorem, ipsum.</div>
+                <div>Restaurant: Lorem, ipsum.</div>
+                <div>Date: lorem</div>
+            </div>
+            <div class="col-auto">
+                <div class="orderitems">Order Items</div>
+                <div class="orderitemsbox">
+                    <div>item1*2 cost</div>
+                    <div>item1*2 cost</div>
+                    <div>item1*2 cost</div>
+                    <div>item1*2 cost</div>
+                    <div>item1*2 cost</div>
+                    <div>item1*2 cost</div> 
+                    <div class="totalcost">Total Cost cost</div>
+                </div>
+               
+            </div>
+        </div>
+
+        <div class="row justify-content-around order no-gutters">
+            <div class="col-auto orderdetail">
+                <div>OrderId: Lorem, ipsum.</div>
+                <div>Restaurant: Lorem, ipsum.</div>
+                <div>Date: lorem</div>
+            </div>
+            <div class="col-auto">
+                <div class="orderitems">Order Items</div>
+                <div class="orderitemsbox">
+                    <div>item1*2 cost</div>
+                    <div>item1*2 cost</div>
+                    <div>item1*2 cost</div>
+                    <div>item1*2 cost</div>
+                    <div>item1*2 cost</div>
+                    <div>item1*2 cost</div> 
+                    <div class="totalcost">Total Cost cost</div>
+                </div>
+               
+            </div>
+        </div>
+
+        <div class="row justify-content-around order no-gutters">
+            <div class="col-auto orderdetail">
+                <div>OrderId: Lorem, ipsum.</div>
+                <div>Restaurant: Lorem, ipsum.</div>
+                <div>Date: lorem</div>
+            </div>
+            <div class="col-auto">
+                <div class="orderitems">Order Items</div>
+                <div class="orderitemsbox">
+                    <div>item1*2 cost</div>
+                    <div>item1*2 cost</div>
+                    <div>item1*2 cost</div>
+                    <div>item1*2 cost</div>
+                    <div>item1*2 cost</div>
+                    <div>item1*2 cost</div> 
+                    <div class="totalcost">Total Cost cost</div>
+                </div>
+               
+            </div>
         </div>
     </div>
 </body>
