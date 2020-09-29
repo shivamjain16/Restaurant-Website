@@ -12,6 +12,10 @@ body{
     padding:5px;
 }
 
+.notifs1, .notifs3{
+    margin-top:15px;
+}
+
 .orderitems{
     text-align:center;
     
