@@ -11,13 +11,25 @@ body{
 
 /* Image and User details */
 
-.myimg{
-    border:3px solid black;
-}
 
-.myimg >img{
+.myimg{
     height:30vh;
     width:100%;
+    border:3px solid black;
+    cursor: pointer;
+}
+
+.myimgbig{
+    height:80vh;
+    width:81vw;
+    z-index: 5;
+    border:3px solid black;
+    cursor: pointer;
+    
+}
+
+.userdetails{
+    z-index:-1;
 }
 
 .imageuserdetails{
@@ -56,3 +68,14 @@ body{
 .orderdetail > div{
     padding:10px;
 }
+
+.viewmore{
+    margin-top: 10px;
+}
+
+.removevis{
+    display:none;
+}
+
+
+
