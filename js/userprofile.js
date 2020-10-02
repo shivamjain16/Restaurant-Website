@@ -12,7 +12,7 @@ function viewMoreOrders(){
         orders[i].classList.remove("removevis");
     }
     index+=3;
-    if(index>=ln){
+    if(index>=len){
         document.querySelector(".viewmore").classList.add("removevis");
     }
 }
