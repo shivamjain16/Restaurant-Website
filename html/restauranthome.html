@@ -62,7 +62,7 @@
     <!-- Notifications -->
 
     <div class="container">
-        <div class="row justify-content-around form-group notifs">
+        <div class="row justify-content-around form-group notifs notif0">
             <div class="col-md-3 notifs1 col-sm-6">
                 <div>OrderId: Lorem, ipsum.</div>
                 <div>Order by: Lorem, ipsum.</div>
@@ -83,24 +83,31 @@
                
             </div>
             <div class="col-md-3 notifs3 ">
-                <div>
-                    <input type="text" placeholder="Enter preparation time">
-                    
-                </div>
-                <div>
-                    <a class="btn btn-success btn-sm" href="#" role="button">Submit</a>
+                <div class="preparetime0">
+                    <div>
+                        <input type="text" placeholder="Enter preparation time">
+                        
+                    </div>
+                    <div>
+                        <button class="btn btn-success btn-sm" type="submit" onclick="removebtn(0)">Submit</button>
 
+                    </div>
+                    <div class="removevis">
+                        Preparation Time:x min
+                    </div>
                 </div>
                 <div>
                     If prepared
                 </div>
                 <div>
-                    <a class="btn btn-success btn-sm" href="#" role="button">Click here</a>
+                    <button class="btn btn-success btn-sm" type="submit" onclick="removenotif(0)">Click here</button>
                 </div>
             </div>
         </div>
 
-        <div class="row justify-content-around form-group notifs">
+
+
+        <div class="row justify-content-around form-group notifs notif1">
             <div class="col-md-3 notifs1 col-sm-6">
                 <div>OrderId: Lorem, ipsum.</div>
                 <div>Order by: Lorem, ipsum.</div>
@@ -121,24 +128,31 @@
                
             </div>
             <div class="col-md-3 notifs3 ">
-                <div>
-                    <input type="text" placeholder="Enter preparation time">
-                    
-                </div>
-                <div>
-                    <a class="btn btn-success btn-sm" href="#" role="button">Submit</a>
+                <div class="preparetime1">
+                    <div>
+                        <input type="text" placeholder="Enter preparation time">
+                        
+                    </div>
+                    <div>
+                        <button class="btn btn-success btn-sm" type="submit" onclick="removebtn(1)">Submit</button>
 
+                    </div>
+                    <div class="removevis">
+                        Preparation Time:x min
+                    </div>
                 </div>
                 <div>
                     If prepared
                 </div>
                 <div>
-                    <a class="btn btn-success btn-sm" href="#" role="button">Click here</a>
+                    <button class="btn btn-success btn-sm" type="submit" onclick="removenotif(1)">Click here</button>
                 </div>
             </div>
         </div>
 
-        <div class="row justify-content-around form-group notifs">
+
+
+        <div class="row justify-content-around form-group notifs notif2">
             <div class="col-md-3 notifs1 col-sm-6">
                 <div>OrderId: Lorem, ipsum.</div>
                 <div>Order by: Lorem, ipsum.</div>
@@ -159,24 +173,31 @@
                
             </div>
             <div class="col-md-3 notifs3 ">
-                <div>
-                    <input type="text" placeholder="Enter preparation time">
-                    
-                </div>
-                <div>
-                    <a class="btn btn-success btn-sm" href="#" role="button">Submit</a>
+                <div class="preparetime2">
+                    <div>
+                        <input type="text" placeholder="Enter preparation time">
+                        
+                    </div>
+                    <div>
+                        <button class="btn btn-success btn-sm" type="submit" onclick="removebtn(2)">Submit</button>
 
+                    </div>
+                    <div class="removevis">
+                        Preparation Time:x min
+                    </div>
                 </div>
                 <div>
                     If prepared
                 </div>
                 <div>
-                    <a class="btn btn-success btn-sm" href="#" role="button">Click here</a>
+                    <button class="btn btn-success btn-sm" type="submit" onclick="removenotif(2)">Click here</button>
                 </div>
             </div>
         </div>
 
-        <div class="row justify-content-around form-group notifs">
+
+
+        <div class="row justify-content-around form-group notifs notif3">
             <div class="col-md-3 notifs1 col-sm-6">
                 <div>OrderId: Lorem, ipsum.</div>
                 <div>Order by: Lorem, ipsum.</div>
@@ -197,22 +218,31 @@
                
             </div>
             <div class="col-md-3 notifs3 ">
-                <div>
-                    <input type="text" placeholder="Enter preparation time">
-                    
-                </div>
-                <div>
-                    <a class="btn btn-success btn-sm" href="#" role="button">Submit</a>
+                <div class="preparetime3">
+                    <div>
+                        <input type="text" placeholder="Enter preparation time">
+                        
+                    </div>
+                    <div>
+                        <button class="btn btn-success btn-sm" type="submit" onclick="removebtn(3)">Submit</button>
 
+                    </div>
+                    <div class="removevis">
+                        Preparation Time:x min
+                    </div>
                 </div>
                 <div>
                     If prepared
                 </div>
                 <div>
-                    <a class="btn btn-success btn-sm" href="#" role="button">Click here</a>
+                    <button class="btn btn-success btn-sm" type="submit" onclick="removenotif(3)">Click here</button>
                 </div>
             </div>
         </div>
+
+
+       
     </div>
+    <script src="../js/restauranthome.js"></script>
 </body>
 </html>

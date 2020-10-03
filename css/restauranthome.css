@@ -32,4 +32,6 @@ body{
     font-size: 1.2rem;
 }
 
-
+.removevis{
+    display:none;
+}
