@@ -6,6 +6,7 @@ body{
 
 .notifs{
     border:0.5px solid black;
+    background-color: #28F041;
 }
 
 .notifs1 > div, .notifs2 > div, .notifs3 > div{
